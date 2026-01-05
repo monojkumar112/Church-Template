@@ -1,0 +1,287 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Playball&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  outline: none;
+  box-sizing: border-box;
+}
+
+/*===== VARIABLES CSS =====*/
+
+:root {
+  /*========== Colors ==========*/
+  --primary-color: #FFD2A4;
+  --secoundary-color: #FFD2A4;
+  --black-color: #000000;
+  --white-color: #ffffff;
+  --body-color: #ffffff;
+  --primary-font: "Open Sans", sans-serif;
+  --body-font: "Open Sans", sans-serif;
+
+  --sec-title-font: 25px;
+  --p-font: 18px;
+  --m-title: 25px;
+  --l-title: 36px;
+  --p-font-height: 24px;
+  --lp-font-height: 50px;
+  /*========== Font weight ==========*/
+  --font-medium: 400;
+  --font-semi-bold: 600;
+}
+
+/*========== BASE ==========*/
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+div#__next {
+  overflow-x: hidden;
+}
+
+body {
+  background: var(--white-color);
+  color: #11142d;
+  font-size: var(--p-font);
+  font-weight: 400;
+  font-family: var(--body-font) !important;
+  line-height: var(--p-font-height);
+  overflow-x: hidden;
+}
+
+img {
+  vertical-align: middle;
+  height: auto;
+}
+
+a {
+  text-decoration: none !important;
+  display: inline-block;
+}
+
+a:hover {
+  text-decoration: none;
+  color: var(--main-color);
+}
+
+ul,
+ol {
+  padding-left: 0 !important;
+  list-style: none;
+}
+
+button:focus {
+  outline: none;
+}
+
+/* ============================GENERAL STYLE END======= */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+li,
+span,
+label {
+  margin: 0;
+}
+
+p {
+  margin-bottom: 0 !important;
+}
+
+.cpb-0 {
+  padding: 0 !important;
+}
+
+.ovh {
+  overflow: hidden;
+}
+
+table.table {
+  white-space: nowrap;
+}
+
+/* ===================custom button============ */
+
+.custom-btn {
+  width: fit-content;
+  padding: 10px 30px;
+  border-radius: 50px;
+  border: none;
+  outline: none;
+  color: var(--white-color);
+  font-size: 20px;
+  transition: 0.3s;
+  background: var(--secoundary-color);
+  border: 1px solid var(--primary-color);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.custom-btn:hover {
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  background: transparent;
+}
+
+.custom-btn-alt {
+  width: fit-content;
+  padding: 10px 30px;
+  border-radius: 50px;
+  border: none;
+  outline: none;
+  color: var(--primary-color);
+  font-size: 20px;
+  transition: 0.3s;
+  background: transparent;
+  display: flex;
+  border: 1px solid var(--primary-color);
+  align-items: center;
+  gap: 10px;
+}
+
+.custom-btn-alt:hover {
+  color: var(--white-color);
+  border-color: var(--primary-color);
+  background: var(--secoundary-color);
+}
+
+.section-title {
+  color: var(--primary-color);
+  font-size: 70px;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.cpy-5 {
+  padding: 50px 0;
+}
+
+.cpy-8 {
+  padding-top: 100px;
+  padding-bottom: 80px;
+}
+
+.cpy-6 {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.cpt-6 {
+  padding-top: 100px;
+}
+
+.cpb-6 {
+  padding-bottom: 100px;
+}
+
+.cpt-7 {
+  padding-top: 80px;
+}
+
+.cpt-9 {
+  padding-top: 70px;
+}
+
+.cpb-7 {
+  padding-bottom: 80px;
+}
+
+@media screen and (max-width: 992px) {
+  .cpy-5 {
+    padding: 40px 0;
+  }
+
+  .cpy-8 {
+    padding-top: 80px;
+    padding-bottom: 60px;
+  }
+
+  .cpy-6 {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  .cpt-6 {
+    padding-top: 80px;
+  }
+
+  .cpb-6 {
+    padding-bottom: 80px;
+  }
+
+  .cpt-7 {
+    padding-top: 60px;
+  }
+
+  .cpt-9 {
+    padding-top: 30px;
+  }
+
+  .cpb-7 {
+    padding-bottom: 60px;
+  }
+
+  .cmt-4 {
+    margin-top: 30px;
+  }
+
+  .cmb-4 {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .cpy-5 {
+    padding: 30px 0;
+  }
+
+  .cpy-8 {
+    padding-top: 60px;
+    padding-bottom: 40px;
+  }
+
+  .cpy-6 {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .cpt-6 {
+    padding-top: 60px;
+  }
+
+  .cpb-6 {
+    padding-bottom: 60px;
+  }
+
+  .cpt-7 {
+    padding-top: 40px;
+  }
+
+  .cpb-7 {
+    padding-bottom: 40px;
+  }
+}
+
+body#pg_embed_calendar_list table#calendar thead td {
+  display: none !important;
+}
+
+/* Optional: Hide navigation arrows */
+iframe::content .fc-prev-button,
+iframe::content .fc-next-button {
+  display: none !important;
+}

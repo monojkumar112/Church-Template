@@ -1,0 +1,234 @@
+/* Page Builder Sections CSS */
+/* This CSS file is used in both Laravel backend and Next.js frontend */
+
+/* Hero Section */
+.section-hero {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    padding: 80px 20px;
+    text-align: center;
+    color: white;
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-hero .hero-title {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.section-hero .hero-description {
+    font-size: 1.25rem;
+    margin-bottom: 30px;
+    opacity: 0.9;
+}
+
+.section-hero .hero-button {
+    display: inline-block;
+    padding: 12px 30px;
+    background: white;
+    color: #667eea;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: transform 0.3s;
+}
+
+.section-hero .hero-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* Text Block Section */
+.section-text-block {
+    padding: 60px 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.section-text-block .text-title {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.section-text-block .text-content {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #666;
+}
+
+/* Image Gallery Section */
+.section-gallery {
+    padding: 60px 20px;
+}
+
+.section-gallery .gallery-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.section-gallery .gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.section-gallery .gallery-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    aspect-ratio: 1;
+}
+
+.section-gallery .gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s;
+}
+
+.section-gallery .gallery-item:hover img {
+    transform: scale(1.1);
+}
+
+/* CTA (Call to Action) Section */
+.section-cta {
+    background: #f8f9fa;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.section-cta .cta-title {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.section-cta .cta-description {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+    color: #666;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.section-cta .cta-button {
+    display: inline-block;
+    padding: 15px 40px;
+    background: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.section-cta .cta-button:hover {
+    background: #0056b3;
+}
+
+/* Two Column Section */
+.section-two-column {
+    padding: 80px 20px;
+    background: #fff;
+}
+
+.section-two-column .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section-two-column .row {
+    align-items: center;
+}
+
+.section-two-column .column-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 25px;
+    color: #333;
+    line-height: 1.2;
+}
+
+.section-two-column .column-content {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.section-two-column .column-content p {
+    margin-bottom: 15px;
+}
+
+.section-two-column img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.section-two-column .btn {
+    padding: 12px 30px;
+    border-radius: 25px;
+    font-weight: 500;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.3s;
+    background: linear-gradient(135deg, #8B4513 0%, #A0522D 100%);
+    color: white;
+    border: none;
+}
+
+.section-two-column .btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(139, 69, 19, 0.3);
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .section-two-column {
+        grid-template-columns: 1fr;
+    }
+
+    .section-hero .hero-title {
+        font-size: 2rem;
+    }
+
+    .section-gallery .gallery-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Container for all sections */
+.page-builder-section {
+    width: 100%;
+}
+
+/* Page section wrapper */
+.page-section {
+    width: 100%;
+    margin-bottom: 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .section-hero {
+        padding: 40px 15px;
+        min-height: 300px;
+    }
+
+    .section-text-block,
+    .section-gallery,
+    .section-cta {
+        padding: 40px 15px;
+    }
+}
+

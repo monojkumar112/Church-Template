@@ -1,0 +1,200 @@
+/* ================= NAVBAR ================= */
+.navbar {
+  padding: 12px 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
+  background: #333333;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -4px rgba(0, 0, 0, 0.1);
+  color: #fff;
+}
+
+.navbar-brand {
+  padding: 0;
+}
+
+.navbar-brand img {
+  width: 180px;
+}
+
+.navbar-nav {
+  gap: 0px;
+}
+
+.navbar-nav li a {
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 2px;
+  color: #fff !important;
+  transition: 0.3s;
+}
+
+.navbar-nav li .custom-btn {
+  font-size: 13px;
+  padding: 7px 15px;
+}
+
+.navbar-nav li a:hover,
+.navbar-nav li a:focus {
+  color: #b28744;
+}
+
+/* Dropdown Menu */
+.nav-item.dropdown.dropdown-mega .dropdown-menu {
+  width: 80%;
+  top: 76px;
+  left: 17%;
+  animation: fadeIn 0.3s ease-in-out;
+  border: none;
+}
+
+.menu-img-item {
+  border-radius: 0 4px 4px 0;
+  height: 100%;
+}
+.donate-btn-item {
+  padding-left: 60px;
+}
+.donate-btn-item .custom-btn {
+  font-size: 18px;
+  padding: 8px 30px;
+  border-radius: 50px;
+}
+.dropdown-toggle::after {
+  display: inline-block;
+  margin-left: 0.26em;
+  vertical-align: 0.3em;
+  content: "";
+  border-top: 0.4em solid;
+  border-right: 0.4em solid transparent;
+  border-bottom: 0;
+  border-left: 0.4em solid transparent;
+  position: relative;
+  bottom: -2px;
+  left: 3px;
+}
+
+.dropdown-items {
+  padding: 20px;
+}
+
+.dropdown-mega .dropdown-item {
+  padding: 0.4rem 1rem;
+  color: #333333 !important;
+}
+
+.dropdown-item:active {
+  background-color: #e9ecef;
+}
+
+/* Mobile Toggle (Hamburger) */
+.navbar-toggler {
+  border: none;
+  padding: 0;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+.hamburger-toggle {
+  width: 50px;
+  height: 50px;
+  position: relative;
+}
+
+.hamburger {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 24px;
+  height: 18px;
+  transform: translate(-50%, -50%);
+}
+
+.hamburger span {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: #fff;
+  transition: all 0.3s ease;
+}
+
+.hamburger span:nth-child(1) {
+  top: 0;
+}
+
+.hamburger span:nth-child(2) {
+  top: 8px;
+}
+
+.hamburger span:nth-child(3) {
+  bottom: 0;
+}
+
+.navbar-nav li .custom-btn:hover,
+.navbar-nav li .custom-btn:focus {
+  color: #fff;
+}
+
+@media (min-width: 1200px) {
+  .navbar.navbar-expand-lg .container {
+    max-width: 1200px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .navbar.navbar-expand-lg .container {
+    max-width: 1320px;
+  }
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 1200px) {
+  /* Collapse background and spacing */
+  .navbar-collapse {
+    background: #333333;
+    padding: 12px 16px;
+    border-radius: 8px;
+    margin-top: 12px;
+  }
+  .donate-btn-item {
+    padding-left: 0px;
+  }
+  .navbar-nav {
+    gap: 0;
+  }
+
+  .navbar-nav .nav-link {
+    display: block;
+    padding: 10px 0;
+  }
+
+  /* Mega dropdown behaves like normal list */
+  .nav-item.dropdown.dropdown-mega .dropdown-menu {
+    width: 100%;
+    position: static;
+    top: auto;
+    left: 0;
+    box-shadow: none;
+    border-radius: 8px;
+  }
+
+  /* Hide menu image on small screens (already d-none d-md-block, keep safe) */
+  .menu-img-item {
+    display: none !important;
+  }
+
+  .dropdown-item {
+    white-space: inherit !important;
+  }
+}
+
+@media (min-width: 992px) {
+  .navbar-nav {
+    gap: 0px;
+  }
+}
