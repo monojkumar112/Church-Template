@@ -20,7 +20,7 @@ const BookingMass = ({ data }) => {
                 <div dangerouslySetInnerHTML={{ __html: data?.mass_offer_description }} />
 
 
-                <div className="booking-btn-group">
+                <div className="booking-btn-group mt-4">
                   <Link
                     href={"/mass-offering"}
                     className="custom-btn learn-more-btn"
@@ -34,7 +34,7 @@ const BookingMass = ({ data }) => {
               <div className="booking-img">
                 {/* {"/assets/images/mass.png"} */}
                 <Image
-                  src={data?.mass_offer_photo}
+                  src={data?.mass_offer_photo || "/assets/images/mass.png"}
                   width={636}
                   height={636}
                   alt="Mass"

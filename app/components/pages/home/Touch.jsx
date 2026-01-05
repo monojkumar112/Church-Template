@@ -34,8 +34,7 @@ const Touch = ({ data }) => {
             </div>
             <div className="touch-img">
               <Image
-                // {"/assets/images/tach.png"}
-                src={data?.stay_touch_photo}
+                src={data?.stay_touch_photo || "/assets/images/tach.png"}
                 width={287}
                 height={215}
                 alt="Touch"

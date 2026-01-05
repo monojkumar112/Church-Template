@@ -71,8 +71,8 @@ const Header = () => {
             </button>
 
             {/* <!-- Navbar Links --> */}
-            <div className="collapse navbar-collapse" id="navbar-content">
-              <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
+            <div className="collapse navbar-collapse justify-content-between header-nav-links" id="navbar-content">
+              <ul className="navbar-nav mb-2 mb-lg-0">
                 {/* <!-- Home --> */}
                 <li className="nav-item">
                   <Link className="nav-link active" href="/">
@@ -131,60 +131,6 @@ const Header = () => {
                                   </li>
                                 ))
                               ) : null}
-                              {/* <li>
-                                <Link
-                                  href="/father-victor-vella"
-                                  className="dropdown-item"
-                                >
-                                  Father Victor Vella
-                                </Link>
-                              </li>
-                              <li>
-                                <Link
-                                  href="/deacon-barry-chalkley"
-                                  className="dropdown-item"
-                                >
-                                  Deacon Barry Chalkley
-                                </Link>
-                              </li>
-                              <li>
-                                <Link
-                                  href="/deacon-dayne-du-preez"
-                                  className="dropdown-item"
-                                >
-                                  Deacon Wayne du Preez
-                                </Link>
-                              </li>
-                              <li>
-                                <Link
-                                  href="/sisters-of-mercy"
-                                  className="dropdown-item"
-                                >
-                                  Sisters of Mercy
-                                </Link>
-                              </li>
-                              <li>
-                                <Link href="/groups" className="dropdown-item">
-                                  Groups
-                                </Link>
-                              </li>
-
-                              <li>
-                                <Link
-                                  href="/our-parish-vision"
-                                  className="dropdown-item"
-                                >
-                                  Our Parish Vision
-                                </Link>
-                              </li> */}
-                              {/* <li>
-                                <Link
-                                  href="/brief-history"
-                                  className="dropdown-item"
-                                >
-                                  Brief history of our parish
-                                </Link>
-                              </li> */}
                             </ul>
                           </div>
                         </div>
@@ -204,7 +150,7 @@ const Header = () => {
                 </li>
 
                 {/* Fellowship (Static title, dynamic subpages) */}
-                <li className="nav-item dropdown dropdown-mega position-static">
+                {/* <li className="nav-item dropdown dropdown-mega position-static">
                   <a
                     className="nav-link dropdown-toggle"
                     href="#"
@@ -221,14 +167,7 @@ const Header = () => {
                               <strong>Fellowship</strong>
                             </h6>
                             <ul className="pt-2 pt-md-3">
-                              {/* <li>
-                                <Link
-                                  href="/fellowship"
-                                  className="dropdown-item"
-                                >
-                                  Fellowship
-                                </Link>
-                              </li> */}
+                          
                               <li>
                                 <Link href="/event" className="dropdown-item">
                                   Recent events
@@ -252,91 +191,7 @@ const Header = () => {
                                   </li>
                                 ))
                               ) : null}
-                              {/* <li>
-                                <Link
-                                  href="/getting-involved"
-                                  className="dropdown-item"
-                                >
-                                  Getting involved
-                                </Link>
-                              </li>
-
-                              <li>
-                                <Link
-                                  href="/families-and-youth"
-                                  className="dropdown-item"
-                                >
-                                  Families and Youth
-                                </Link>
-                              </li>
-                              <li>
-                                <Link
-                                  href="/practical-and-financial"
-                                  className="dropdown-item"
-                                >
-                                  Practical and financial
-                                </Link>
-                              </li> */}
-                              {/* <li>
-                                <Link href="/event" className="dropdown-item">
-                                  Recent events
-                                </Link>
-                              </li> */}
-                              {/* <li>
-                                <Link
-                                  href="/social-and-support"
-                                  className="dropdown-item"
-                                >
-                                  Social and support
-                                </Link>
-                              </li>
-                              <li>
-                                <Link href="/mission" className="dropdown-item">
-                                  Our mission
-                                </Link>
-                              </li>
-                              <li>
-                                <Link
-                                  href="/evangelisation"
-                                  className="dropdown-item"
-                                >
-                                  PECS
-                                </Link>
-                              </li>
-                              <li>
-                                <Link
-                                  href="/our-evangelisation"
-                                  className="dropdown-item"
-                                >
-                                  Our evangelisation
-                                </Link>
-                              </li>
-                              <li>
-                                <Link
-                                  href="/our-social-action"
-                                  className="dropdown-item"
-                                >
-                                  Our social action
-                                </Link>
-                              </li> */}
-                              {/* {loading ? (
-                              <li>
-                                <span className="dropdown-item text-muted">
-                                  Loading...
-                                </span>
-                              </li>
-                            ) : fellowshipPages.length > 0 ? (
-                              fellowshipPages.map((page) => (
-                                <li key={page.id}>
-                                  <Link
-                                    href={`/fellowship/${page.slug}`}
-                                    className="dropdown-item"
-                                  >
-                                    {page.page_title}
-                                  </Link>
-                                </li>
-                              ))
-                            ) : null} */}
+                             
                             </ul>
                           </div>
                         </div>
@@ -353,14 +208,14 @@ const Header = () => {
                       </div>
                     </div>
                   </div>
-                </li>
+                </li> */}
                 <li className="nav-item">
                   <Link className="nav-link active" href="/page/our-liturgy">
-                    Liturgy
+                    Sermon
                   </Link>
                 </li>
                 {/* <!-- Liturgy --> */}
-                <li className="nav-item dropdown dropdown-mega position-static">
+                {/* <li className="nav-item dropdown dropdown-mega position-static">
                   <a
                     className="nav-link dropdown-toggle"
                     href="#"
@@ -392,27 +247,7 @@ const Header = () => {
                                   </li>
                                 ))
                               ) : null}
-                              {/* <li>
-                                <Link
-                                  href="/prayer-intentions"
-                                  className="dropdown-item"
-                                >
-                                  Prayer Intentions
-                                </Link>
-                              </li>
-                              <li>
-                                <Link
-                                  href="/reflection"
-                                  className="dropdown-item"
-                                >
-                                  A parishioner&apos;s Gospel Reflection
-                                </Link>
-                              </li>
-                              <li>
-                                <Link href="/prayer" className="dropdown-item">
-                                  Prayer and Formation
-                                </Link>
-                              </li> */}
+                            
                             </ul>
                           </div>
                         </div>
@@ -428,21 +263,8 @@ const Header = () => {
                       </div>
                     </div>
                   </div>
-                </li>
-
-                {/* <li className="nav-item">
-                  <Link className="nav-link active" href="/prayer">
-                    Prayer and formation
-                  </Link>
                 </li> */}
-                <li className="nav-item">
-                  <Link
-                    className="nav-link active"
-                    href="/page/our-sacramental-life"
-                  >
-                    Sacramental life
-                  </Link>
-                </li>
+
 
                 <li className="nav-item">
                   <Link className="nav-link active" href="/contact-us">
@@ -451,7 +273,10 @@ const Header = () => {
                 </li>
               </ul>
               <div className="donate-btn-item">
-                <Link className="custom-btn" href="https://donate.mydona.com/holy-innocents-orpington">
+                <Link
+                  className="custom-btn"
+                  href="https://donate.mydona.com/holy-innocents-orpington"
+                >
                   Donate{" "}
                 </Link>
               </div>

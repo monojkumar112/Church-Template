@@ -118,10 +118,10 @@ table.table {
 .custom-btn {
   width: fit-content;
   padding: 10px 30px;
-  border-radius: 50px;
+  border-radius: 10px;
   border: none;
   outline: none;
-  color: var(--white-color);
+  color: var(--black-color);
   font-size: 20px;
   transition: 0.3s;
   background: var(--secoundary-color);
@@ -132,7 +132,7 @@ table.table {
 }
 
 .custom-btn:hover {
-  color: var(--primary-color);
+  color: var(--black-color);
   border: 1px solid var(--primary-color);
   background: transparent;
 }
@@ -140,7 +140,7 @@ table.table {
 .custom-btn-alt {
   width: fit-content;
   padding: 10px 30px;
-  border-radius: 50px;
+  border-radius: 10px;
   border: none;
   outline: none;
   color: var(--primary-color);
@@ -161,7 +161,7 @@ table.table {
 
 .section-title {
   color: var(--primary-color);
-  font-size: 70px;
+  font-size: 60px;
   font-weight: 700;
   line-height: normal;
 }

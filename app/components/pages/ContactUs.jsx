@@ -72,10 +72,21 @@ const ContactUs = () => {
                       <div className="team-item">
                         <div className="team-img">
                           <Image
-                            src={member?.profile_image}
+                            src={
+                              member?.profile_image &&
+                              member?.profile_image !== "members/" &&
+                              member?.profile_image !== ""
+                                ? member.profile_image.startsWith("http")
+                                  ? member.profile_image
+                                  : `${baseUrl}/${member.profile_image.replace(
+                                      /^\/+/,
+                                      ""
+                                    )}`
+                                : "/assets/blank-profile.png"
+                            }
                             width={416}
                             height={416}
-                            alt={member?.name}
+                            alt={member?.name || "Team Member"}
                           />
                         </div>
                         <div className="team-content">

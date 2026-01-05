@@ -40,37 +40,18 @@ const MassEvent = ({ data }) => {
       data-aos-duration="2000"
     >
       <div className="container">
-        <div className="row">
-          {/* Left Content */}
-          <div className=" col-lg-6">
-            <div className="mass-event-left">
-              <h1>{data?.mass_time_title}</h1>
-              <div dangerouslySetInnerHTML={{ __html: data?.mass_time_description }} />
-              <div className="mass-event-right mass-event-right-iframe" id="event">
-                <iframe
-                  src="https://holyinnocents.churchsuite.co.uk/embed/calendar?view=agenda&hide=daynames,navigation&theme=light&accent=%234a90e2&font=Inter&preview=false"
-                  width="599"
-                  height="620"
-                  style={{
-                    border: "none",
-                    borderRadius: "10px",
-                    padding: "15px",
-                    boxShadow: "0 8px 20px rgba(0,0,0,0.09)",
-                  }}
-                  frameBorder="0"
-                ></iframe>
-              </div>
-            </div>
-          </div>
 
+<div className="notice-header">
+  <h1>Our Notices</h1>
+  <p>Our Christian communities must become genuine schools of prayer</p>
+</div>
           {/* Right Content */}
-          <div className="col-lg-6">
             <div className="row">
               {loading ? (
                 <p>Loading...</p>
               ) : displayedNotices.length > 0 ? (
                 displayedNotices.map((notice) => (
-                  <div className="col-lg-12 mb-3" key={notice.id}>
+                  <div className="col-lg-4 mb-3" key={notice.id}>
                     <div
                       className="notice-left"
                       style={{
@@ -102,8 +83,6 @@ const MassEvent = ({ data }) => {
                 </Link>
               </div>
             )}
-          </div>
-        </div>
       </div>
     </section >
   );

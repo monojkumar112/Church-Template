@@ -41,8 +41,7 @@ const ParishCentre = ({ data }) => {
             <div className="col-lg-6">
               <div className="parish-img">
                 <Image
-                  // "/assets/images/parish.png"
-                  src={data?.father_phelan_photo}
+                  src={data?.father_phelan_photo || "/assets/images/parish.png"}
                   width={636}
                   height={404}
                   alt="Parish"

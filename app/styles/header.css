@@ -5,7 +5,7 @@
   top: 0;
   width: 100%;
   z-index: 9999;
-  background: #333333;
+  background: #0D0D0D;
   box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
     0 4px 6px -4px rgba(0, 0, 0, 0.1);
   color: #fff;
@@ -60,7 +60,7 @@
 .donate-btn-item .custom-btn {
   font-size: 18px;
   padding: 8px 30px;
-  border-radius: 50px;
+  border-radius: 10px;
 }
 .dropdown-toggle::after {
   display: inline-block;
@@ -188,6 +188,7 @@
     display: none !important;
   }
 
+
   .dropdown-item {
     white-space: inherit !important;
   }
@@ -198,3 +199,7 @@
     gap: 0px;
   }
 }
+  .header-nav-links{
+    justify-content: space-between !important;
+    margin-left: 120px !important;
+  }

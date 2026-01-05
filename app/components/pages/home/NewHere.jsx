@@ -11,7 +11,7 @@ const NewHere = ({ data }) => {
               <div className="new-image-left">
                 {/* {"/assets/images/new-here.png"} */}
                 <Image
-                  src={data?.new_here_photo}
+                  src={data?.new_here_photo || "/assets/images/new-here.png"}
                   width={636}
                   height={636}
                   alt="New Here"

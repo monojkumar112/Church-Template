@@ -14,10 +14,10 @@ import Touch from "./Touch";
 import ContactUs from "./ContactUs";
 import Evangelisation from "./Evangelisation";
 import NewHere from "./NewHere";
-import FatherHere from "./FatherHere";
 import Upcoming from "./Upcoming";
 
 import React, { useState, useCallback } from "react";
+import CompassionSection from "./CompassionSection";
 
 // export const metadata = {
 //   title: "Holy Innocents' Catholic Church Orpington - Home",
@@ -56,10 +56,9 @@ export default function Home() {
   return (
     <>
       <HeroSlider />
-      <FatherHere data={data} />
       <MassEvent data={data} />
       <NewsLetter />
-
+      <CompassionSection />
       <Upcoming />
       <BookingMass data={data} />
       <NewHere data={data} />
