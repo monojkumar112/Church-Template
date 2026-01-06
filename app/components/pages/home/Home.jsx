@@ -64,10 +64,10 @@ export default function Home() {
       <NewHere data={data} />
       <Team />
       <Community data={data} />
-      <Evangelisation data={data} />
+      {/* <Evangelisation data={data} /> */}
       <Minitries data={data} />
-      <AdorationRoom data={data} />
-      <ParishCentre data={data} />
+      {/* <AdorationRoom data={data} /> */}
+      {/* <ParishCentre data={data} /> */}
       <HowToFind data={data} />
       <Touch data={data} />
       <ContactUs data={data} />

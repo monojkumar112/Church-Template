@@ -67,20 +67,26 @@ const Minitries = ({ data }) => {
               {ministries.map((ministry) => (
                 <div className="col-md-6 col-lg-4 mb-4" key={ministry.id}>
                   <div
-                    className="minitries-item"
-                    style={{ backgroundColor: ministry.color }}
+                    className="minitries-item-modern"
+                    style={{ 
+                      backgroundColor: ministry.color || '#f8f3ed'
+                    }}
+                    data-color={ministry.color || '#f8f3ed'}
                   >
-                    <div className="minitries-img">
-                      <Image
-                        src={ministry.image_icon ? ministry.image_icon : ""}
-                        width={150}
-                        height={150}
-                        alt={ministry.name}
-                      />
+                    <div className="minitries-img-modern">
+                      <div className="minitries-icon-wrapper">
+                        <Image
+                          src={ministry.image_icon || "/assets/images/default-icon.png"}
+                          width={120}
+                          height={120}
+                          alt={ministry.name}
+                          className="minitries-icon"
+                        />
+                      </div>
                     </div>
-                    <div className="minitries-content">
-                      <h3>{ministry.name}</h3>
-                      <p>{ministry.description}</p>
+                    <div className="minitries-content-modern">
+                      <h3 className="minitries-name-modern">{ministry.name}</h3>
+                      <p className="minitries-description-modern">{ministry.description}</p>
                       <button
                         onClick={() => {
                           setSelectedMinistryId(ministry.id),
@@ -88,7 +94,7 @@ const Minitries = ({ data }) => {
                         }}
                         data-bs-toggle="modal"
                         data-bs-target="#exampleModal"
-                        className="custom-btn learn-more-btn"
+                        className="custom-btn learn-more-btn minitries-btn-modern"
                       >
                         Get Involved
                       </button>
